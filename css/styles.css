@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --p-color: #ffffff;
+    --s-color: #000000;
+    --t-color: #252525;
+    --q-color: #ABABAB;
+
+    --font-family:'Poppins', sans-serif;
+
+    --img-logo:url(/Assets/circle-black.png);
+    --img: url(/Assets/small-team-discussing-ideas-2194220-0.svg);
+    --img-switch: url(/Assets/moon-solid.svg);
+}
+
+.darkmode {
+    --p-color:#1c1c1c;
+    --s-color:#ffffff;
+    --q-color:#ABABAB;
+
+    --img-logo:url(/Assets/circle-white.png);
+    --img: url(/Assets/small-team.png);
+    --img-switch: url(/Assets/sun-solid_resized_resized.png);
+}
+
+body {
+    background-color: var(--p-color);
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+}
+
+.fontC {
+    color: var(--s-color);
+}
+
+.btn {
+    background-image: var(--img-switch);
+    background-repeat: no-repeat;
+    color: var(--s-color);
+
+    height: 30px;
+    width: 30px;
+}
+
+.icon {
+    background-image:var(--img-logo);
+    height: 50px;
+    width: 50px;
+}
+
+.cont {
+    box-sizing: border-box;
+    border: 0.5px solid var(--q-color);
+    box-shadow: 0px 4px 64px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+
+    display:flex;
+    justify-content: left;
+    flex-direction: column;
+    padding: 3em 2em;
+    text-align: start;
+    width: 450px;
+
+}
+
+h2 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 38px;
+    color: var(--s-color);
+}
+
+h1 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 31px;
+    line-height: 46px;
+    color: var(--s-color);
+}
+
+label {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--s-color);
+
+    padding: 0;
+}
+
+.ori {
+    display: flex;
+    flex-direction: row;
+}
+
+.inputE {
+    box-sizing: border-box;
+    background: var(--p-color);
+    border: 0.6px solid var(--q-color);
+    border-radius: 6px;
+    padding: 15px;
+
+}
+
+::placeholder {
+    color: var(--q-color)
+}
+
+.remember {
+    margin: 0 0 0 0;
+    color: var(--s-color);
+}
+
+.forgot {
+    margin: 0 0 0 0;
+    color: var(--q-color);
+    text-decoration: none;
+}
+
+.loginbtn {
+    color:var(--p-color);
+    width: 100%;
+    background: var(--s-color);
+    border-radius: 6px;
+}
+
+.img {
+    background-image: var(--img);
+    background-repeat: no-repeat;
+    height: 617px;
+    width: 671px;
+}
+
+.mensagem-erro {
+    color: red;
+    display: flex;
+}
+
+.btn-email,
+.btn-phone {
+    border: none;
+    background-color: var(--p-color);
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .error {
+    color: red;
+  }

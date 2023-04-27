@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Register</title>
+</head>
+<body>
+
+    <br>
+    <div class="ori">
+        <div class="icon ms-5 me-4"></div><input class="btn" id="btn" type="button">
+    </div>
+    <div class="container text-center">
+
+        <div class="row">
+          <div class="col-4">
+            <div class="cont mt-4 mb-4">
+                
+                <h2>Welcome !</h2>
+                <h1 class="mt-3">Sign in to</h1>
+                <label>Lorem Ipsum is simply</label>       
+
+              <form method="post" class="principal__formulario" id="formularioValidation" data-formulario>
+
+                <fieldset class="campo">
+                  <label class="mt-2" for="name">User Name</label>
+                  <input class="mt-2 inputE name" name="nome" type="text" id="nome" placeholder="Register your name">
+                </fieldset>
+
+                <fieldset class="campo">
+                    <label class="mt-2" for="name">Password</label>
+                    <input class="mt-2 inputE password" name="password" type="password" id="password" placeholder="Register your password ">
+                </fieldset>
+  
+                <fieldset class="campo">
+                    <label class="mt-2" for="name">Confirm Password</label>
+                    <input class="mt-2 inputE con-password" name="passwordcon" type="password" id="passwordcon" placeholder="Confirm your password ">
+                </fieldset>
+
+                <fieldset class="campo">
+                  <label class="mt-2" for="name">CPF</label>
+                  <input class="mt-2 inputE cpf" name="cpf" type="text" id="cpf" placeholder="000.000.000-00 " >
+                </fieldset>
+  
+                <li class="campo"  id="campo-email">
+                  <fieldset class="campo">
+                    <label class="mt-2" for="name" id="email-label">Email</label>
+                    <input class="mt-2 inputE email" name="email" type="email" id="email" placeholder="Register your email">
+                  </fieldset>
+               </li>
+               
+                <ul class="campo" id="ademail">
+                </ul>
+
+                <button class="btn-email" id="btn-email" type="button"><i class="fa-light fa-plus fontC"></i></button>
+                <button class="btn-email" id="btn-email-minus" type="button"><i class="fa-solid fa-minus fa-2xs fontC"></i></button>
+
+                <li class="campo"  id="campo-phone">
+                  <fieldset class="campo"></fieldset>
+                    <label class="mt-2" for="name" id="phone-label">Phone</label>
+                    <input class="mt-2 inputE phone" name="phone" type="tel" id="phone" placeholder="(00) 00000-0000">
+                  </fieldset>
+                </li>
+
+                <div class="campo" id="adphone">
+                </div>
+
+                <button class="btn-phone" id="btn-phone" type="button"><i class="fa-light fa-plus fontC"></i></button>
+                <button class="btn-phone" id="btn-phone-minus" type="button"><i class="fa-solid fa-minus fa-2xs fontC"></i></button>
+
+                <div>
+                    <input class="loginbtn mt-4 inputE" value="Register" class="butn" id="register" data-botao-login type="submit">
+                </div>
+              </form>  
+
+                <div class="ori">
+                    <a href="index.html" class="forgot">Already have a Accont?</a>
+                </div>  
+
+
+            </div> 
+          </div>
+          <div class="col-6">
+            <div class="img ms-5">
+                <div class="Img"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <script src="js/jquery-3.6.4.js"></script>
+
+    <script src="http://jqueryvalidation.org/files/dist/jquery.validate.js"></script>
+    <script src="http://jqueryvalidation.org/files/dist/additional-methods.min.js"></script>
+    
+      
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>   
+
+    <script src="js/main.js"></script>
+    <script src="js/register.js"></script>
+    <script src="js/validacao.js"></script>
+    <script src="jquery.mask.min.js"></script>
+   
+</body>
+</html>
