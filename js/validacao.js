@@ -49,7 +49,6 @@ jQuery.validator.addMethod("cpf", function(value, element) {
 }, 'Enter a valid number'); 
 
 
-
 $("#formularioValidation").validate({
     debug: true,
     rules: {

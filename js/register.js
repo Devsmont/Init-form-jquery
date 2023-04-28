@@ -27,19 +27,23 @@ $("#btn-email-minus").click(function(){
 
 $("#btn-phone").click(function(){
     ph++
-    var divOriginal = $("#campo-phone")
-    var clonePhone = divOriginal.clone()
+    var contPhone = $("#adphone");
+    var divOriginal = $("#campo-phone");
+    var clonePhone = divOriginal.clone();
     clonePhone.attr("id",`phones${ph}`);  
     
     var inputClone = clonePhone.find(".phone");
 
+    clonePhone.find("#phone-error").remove();
+
+    inputClone.val("");
     inputClone.attr('id', `phone${ph}`);
     inputClone.unmask();
     inputClone.mask('(00) 00000-0000');
 
     clonePhone.find("#phone-label").text(`Phone ${ph}`);
 
-    clonePhone.insertAfter(divOriginal);
+    clonePhone.insertBefore(contPhone);
 });
     
 $("#btn-phone-minus").click(function(){
